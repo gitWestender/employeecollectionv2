@@ -8,7 +8,7 @@ import java.util.Map;
 public interface IDepartmentService {
     Employee findMaxSalaryOnDepart(int department);
     Employee findMinSalaryOnDepart(int department);
-    List<Employee> findAllDepart(int department);
+    List<Employee> findAllOnDepart(int department);
     Map<Integer, List<Employee>> findAll();
     Double sumOfSalary(int department);
 }
