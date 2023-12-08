@@ -1,4 +1,11 @@
 package com.javalearn.employeecollectionv2.exceptions;
 
-public class EmployeeIllegalNameException extends RuntimeException{
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ResponseStatus;
+
+@ResponseStatus(HttpStatus.BAD_REQUEST)
+public class EmployeeIllegalNameException extends RuntimeException {
+    public EmployeeIllegalNameException(String msg) {
+        super(msg);
+    }
 }
